@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+   
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+   
+}
+*::selection{
+    background-color: goldenrod;
+}
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    background-color:#222 ;
+}
+html::-webkit-scrollbar{
+    width:0.5rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: darkslateblue;
+}
+html::-webkit-scrollbar-thumb{
+    background-color:white;
+    height:0.5rem;
+}
+body{
+    background:#111;
+    overflow-x:hidden;
+    padding-left:30rem;
+  
+
+}
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+    flex-wrap:wrap;
+}
+section{
+    min-height:100vh;
+    padding:1rem;
+}
+.btn{
+    padding:1rem 1rem;
+    background:#333;
+    color:#fff;
+    cursor:pointer;
+    margin-top:1rem;
+    font-size:1.5rem;
+    border-radius:2rem;
+}
+.btn:hover {
+    background-color:goldenrod;
+  }
+header{
+        position: fixed;
+        top:0; left:0;
+        z-index: 1000;
+        height:100%;
+        width:35rem;
+        background:#1a1a1a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        text-align: center;
+        text-size-adjust: 2rem;
+}
+    header .user img{
+             
+        border-radius:35cm;
+        margin-top:15rem;
+        object-fit:cover;
+        border:5px solid yellow;
+        height:17rem;
+        width:17rem;
+
+    }
+    
+    header .user .name{
+        margin-top:0rem;
+        margin-bottom:0rem;
+        font-size:2.5rem;
+        color:#fff;
+        
+    }
+    
+    header .user .post{
+        font-size:1.5rem;
+        margin-top:0rem;
+        color:#eee;
+    }
+    
+    header .navbar{
+        width:75%;
+        margin-top:0rem;
+    }
+    
+    header .navbar ul{
+        list-style: none; 
+        padding:1rem 1rem;
+    }
+    
+    
+    header .navbar ul li a{
+        display: block;
+        padding:0.5rem;
+        margin:0.75rem 0;
+        background:#333;
+        color:#ffffff;
+        font-size: 1.5rem;
+        border-radius: 3rem;
+    }
+    
+    header .navbar ul li a:hover{
+        background-color:goldenrod;
+    }
+    #menu{
+        position:fixed;
+        top:2rem;
+        right:2rem;
+        background-color:#333;
+        color:#fff;
+        cursor:pointer;
+        font-size:2.5rem;
+        padding:1rem 1.5rem;
+        z-index:1000;
+        display:none;
+
+    }
+    .home{
+        display:flex;
+        justify-content:center;
+        flex-flow:column;
+        padding:20rem;
+    }
+    .home h3{
+        margin-bottom:0rem;
+        font-size:2.5rem;
+       
+        color:#fff;
+        line-height:1rem;
+    }
+    .home h1{
+        font-size:2rem;
+        margin:0rem 0;
+        color:#fff;
+        padding:1rem 0;
+        margin-bottom:0rem;
+    }
+    .home p{
+        margin-top:0rem;
+        font-size:2rem;
+        color:#fff;
+        padding:1rem 0;
+
+    }
+    .personal{
+        display:flex;
+        justify-content:center;
+        flex-flow:column;
+        padding:20rem;
+        font-size:2rem;
+        color:#fff;
+        line-height:1rem;
+
+    }
+   .heading span{
+       color:goldenrod;
+   }
+   .personal .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.personal .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+    
+}
+.personal .row .info h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.personal .row .info h3 span{
+    color:#eee;
+    padding:0 .5rem;
+}
+.skills
+{
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding:20rem;
+    font-size:2rem;
+    color:#fff;
+    list-style:none; 
+}
+.skills ul li{
+    border-style:solid;
+    border-radius:2cm;
+    width:100%;
+    margin-top:1rem;
+    padding:0.75rem;
+
+}
+.skills ul li{
+    background-color:goldenrod;
+}
+
+.achievements .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem 0;
+    flex-wrap:wrap;
+    border-bottom:2rem;
+}
+.achievements .box-container .box{
+    height:28rem;
+    width:30rem;
+    overflow:hidden;
+    border-radius:2rem;
+    cursor:pointer;
+    padding-left:4rem;
+    position:relative;
+
+}
+.achievements .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    margin-left:2rem;
+    margin-top:2rem;
+    
+
+}
+.achievements .box-container .box:hover img{
+transform:scale(.2);
+}
+
+.education
+{
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding:20rem;
+    color:#fff;  
+    font-size:2rem;
+}
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+.education .box-container .box{
+    width:25rem;
+    margin:0.5rem rem;
+    padding-left:1rem;
+    border-left:2px solid #fff;
+    position: relative;
+}
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:#222;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+.education .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-left:0.2rem;
+}
+
+.project{
+
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding:20rem;
+    color:#fff;  
+    font-size:2rem;
+}
+.contact{
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding:20rem;
+    color:#fff;  
+    font-size:2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media(max-width:780px){
+        html{
+            font-size:50%;
+        }
+    }
+    @media(max-width:400px){
+        header{
+         width:100%;
+        }
+        /*.heading{
+            margin:0 8rem;
+            font-size:1rem;
+            line-height:100%;
+        }*/
+    }
+    @media(max-width:1100px){
+        .heading{
+            font: size 25%;
+            line-height:2em;
+            float:left;
+            text-align:center;
+            overflow-wrap:normal break-word;
+        }
+        .heading .info .row{
+            overflow-wrap:normal break-word;
+            line-height:10em;
+            font-size:25%;
+            position:fixed;
+        }
+    }
