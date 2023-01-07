@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Divya
-- 👀 I’m interested in app development 
-- 🌱 I’m currently learning Flutter and Java
+- 👀 I’m interested in web development 
+- 🌱 I’m currently learning java and html,css
 - 📫 How to reach me divyamohan3602@gmail.com 
 
 <!---
