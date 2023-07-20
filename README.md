@@ -1,5 +1,4 @@
-- 👋 Hi, I’m Divya
-- 👀 I’m interested in web development 
+- 👋 Hi, I’m Divya M
 - 🌱 I’m currently learning java and html,css
 - 📫 How to reach me divyamohan3602@gmail.com 
 
